@@ -7,7 +7,7 @@ package main
  * Encrypt and decrypt Darwinia Redshirt2 files.
  * By J. Stuart McMurray
  * Created 20220515
- * Last Modified 20220515
+ * Last Modified 20220522
  */
 
 import (
@@ -38,7 +38,7 @@ var table = []int8{
 
 func main() {
 	flag.Usage = func() {
-		fmt.Fprint(
+		fmt.Fprintf(
 			os.Stderr,
 			`Usage: %s
 
